@@ -1,2 +1,33 @@
-<h1>{{title}}</h1>
-<p>Welcome to {{title}}</p>
+<h1>Monitor</h1>
+<p>Wait for an item to appear, and then buy it.</p>
+
+<hr>
+<br>
+
+<div class="small-form center-block">
+    <form method="post" action="/monitor">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputProduct">Product URL</label>
+                <input type="url" name="url" class="form-control" id="inputProduct">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputWebsite">Website</label>
+                <select name="website" id="inputWebsite" class="form-control custom-select">
+                    <option selected>Choose your website...</option>
+                    <option>HolyPopStore</option>
+                    <option>WrongWeather</option>
+                    <option>NakedCPH</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="inputSize">Size</label>
+            <input name="size" type="number" class="form-control" id="inputSize">
+        </div>
+
+        <br>
+        
+        <button type="submit" class="btn btn-primary">Monitor</button>
+    </form>
+</div>
